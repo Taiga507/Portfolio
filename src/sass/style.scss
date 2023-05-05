@@ -1,0 +1,19 @@
+@import '../sass/libs/bootstrap.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.a {
+    position: absolute;
+    width: 375px;
+    height: 78px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 120px;
+}
