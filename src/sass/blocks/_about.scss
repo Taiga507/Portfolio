@@ -2,8 +2,7 @@
     padding: 120px;
     &__wrapper {
         display: grid;
-        grid-template: minmax(243px, auto) minmax(317px, auto) / 400px 570px;
-        grid-auto-rows: minmax(243px, auto);
+        grid-template: minmax(243px, auto) minmax(255px, auto) / 400px 570px;
         gap: 40px 70px;
     }
     &__photo {
@@ -15,24 +14,20 @@
     &__descr {
         padding-top: 6px;
         .divider {
-            width: 60px;
-            height: 0px;
-            border: 3px solid $main-color;
-            border-bottom: none;
+            margin-top: 4px;
         }
     }
-    &__subtitle {
+    &__title {
         position: relative;
         padding: 1px 0 0 12px;
         @include before_circle
     }
-    &__title {
+    &__subtitle {
         margin-bottom: 1px;
     }
     &__text {
         margin-top: 20px;
         margin-bottom: 0;
-        font-weight: 500;
         font-size: 14px;
         line-height: 21px;
         color: #000000;
@@ -40,16 +35,15 @@
     &__skills {
         display: grid;
         grid-template: repeat(2, minmax(116px, auto)) / 260px 260px;
-        grid-auto-rows: 1fr;
         gap: 20px 50px;
         &-item {
             display: grid;
-            grid-template-columns: 36px 200px;
+            grid-template-columns: 40px 200px;
             column-gap: 20px;
         }
         &-circle {
             position: relative;
-            padding: 14px 0 0 14px;
+            padding: 15px 0 0 15px;
             @include before_circle;
             &:before {
                 top: 0;
@@ -57,7 +51,6 @@
         }
         &-text {
             margin-top: 6px;
-            font-weight: 500;
             font-size: 12px;
             line-height: 18px;
             color: #000000;
