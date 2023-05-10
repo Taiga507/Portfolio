@@ -1,5 +1,5 @@
 .about {
-    padding: 120px;
+    padding-top: 120px;
     &__wrapper {
         display: grid;
         grid-template: minmax(243px, auto) minmax(255px, auto) / 400px 570px;
@@ -14,7 +14,7 @@
     &__descr {
         padding-top: 6px;
         .divider {
-            margin-top: 4px;
+            margin: 4px 0;
         }
     }
     &__title {
