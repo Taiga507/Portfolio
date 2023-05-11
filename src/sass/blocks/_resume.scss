@@ -3,9 +3,9 @@
     &__title {
         position: relative;
         text-align: center;
+        margin-bottom: 0;
         @include before_circle;
         &:before {
-            top: 1;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -34,7 +34,6 @@
                 left: -7px;
                 top: 50%;
                 transform: translateY(-50%);
-                
             }
         }
         ul {
