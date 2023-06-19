@@ -1,5 +1,5 @@
 .skills {
-    padding-top: 120px;
+    padding-top: 100px;
     &__title {
         position: relative;
         text-align: center;
@@ -36,7 +36,6 @@
         }
     }
     &__ratings {
-        padding-bottom: 120px;
         display: grid;
         grid-template: repeat(2, 70px) / repeat(3, 350px);
         gap: 30px 45px;
