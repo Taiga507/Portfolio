@@ -125,12 +125,16 @@
         <div class="menu__overlay"></div>
     </div>
     
-    <!-- Заолнить информацию -->
+    <!-- Заполнить информацию -->
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/about_me.jpg" alt="me">
+                    <picture>
+                        <source media="(max-width:576px)" srcset="https://media.npr.org/assets/img/2022/11/08/ap22312071681283-0d9c328f69a7c7f15320e8750d6ea447532dff66-s800-c85.webp">
+                        <source media="(min-width: 577px)" srcset="img/about_me.jpg">
+                        <img src="img/about_me.jpg" alt="me">
+                    </picture>
                 </div>
 
                 <div class="about__descr">
