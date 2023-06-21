@@ -73,6 +73,21 @@
                 grid-row: unset;
                 grid-column: unset;
             }
+            &-img {
+                &:hover {
+                    box-shadow: unset;
+                }
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding-left: 0;
+            padding-right: 0;
+            column-gap: 35px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/250px 250px;
         }
     }
 }
@@ -140,6 +155,37 @@
         &__wrapper {
             grid-template-columns: repeat(auto-fit, 340px);
             padding: 40px 0 0 0;
+        }
+    }
+    .contacts {
+        padding-top: 80px;
+        &__wrapper {
+            padding-bottom: 80px;
+            column-gap: 20px;
+            grid-template-columns: 350px auto;
+        }
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
         }
     }
 }
@@ -211,6 +257,25 @@
         &__wrapper {
             padding-top: 20px;
             justify-content: center;
+        }
+    }
+    .contacts {
+        padding-top: 40px;
+        &__wrapper {
+            padding-bottom: 40px;
+            grid-template-columns: 1fr;
+        }
+        &__photo {
+            display: none;
+        }
+        &__form {
+            grid-template: 45px 190px / 257px 257px;
+        }
+        &__triggers {
+            row-gap: unset;
+        }
+        &__btn {
+            align-self: center;
         }
     }
 }
@@ -300,6 +365,14 @@
         &__items {
             grid-template: minmax(21px,auto) minmax(18px,auto)/minmax(172px,auto) minmax(103px,auto);
             padding-left: 8px;
+        }
+    }
+    .contacts {
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__triggers {
+            row-gap: 10px;
         }
     }
 }
